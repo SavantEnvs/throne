@@ -1,0 +1,10 @@
+project: savantenvs/throne
+target: fuzz_subscription
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_subscription/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_subscription
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/fuzz_subscription/fuzz_subscription.dict

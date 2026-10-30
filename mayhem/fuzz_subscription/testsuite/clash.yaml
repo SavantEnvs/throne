@@ -1,0 +1,24 @@
+proxies:
+  - name: clash-ss
+    type: ss
+    server: 192.0.2.7
+    port: 8443
+    cipher: aes-128-gcm
+    password: pw
+  - name: clash-trojan
+    type: trojan
+    server: t.example.com
+    port: 443
+    password: pw
+    sni: t.example.com
+  - name: clash-vmess
+    type: vmess
+    server: v.example.com
+    port: 443
+    uuid: abcdef01-2345-6789-abcd-ef0123456789
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws

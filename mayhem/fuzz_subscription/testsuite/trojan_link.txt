@@ -1,0 +1,1 @@
+trojan://secret@trojan.example.org:443?sni=front.example.org&type=ws&path=%2Fws&host=cdn.example.org#my-trojan

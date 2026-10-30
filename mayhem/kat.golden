@@ -1,0 +1,12 @@
+ss #1 type=Shadowsocks name=my-ss server=example.com port=8388
+ss count=1
+trojan #1 type=Trojan name=my-trojan server=trojan.example.org port=443
+trojan count=1
+vmess #1 type=VMess name=my-vmess server=vm.example.net port=443
+vmess count=1
+clash #1 type=Shadowsocks name=clash-ss server=192.0.2.7 port=8443
+clash #2 type=Trojan name=clash-trojan server=t.example.com port=443
+clash count=2
+garbage count=0
+qr-url decoded=1 first=https://example.com/throne
+qr-link decoded=1 first=trojan://secret@trojan.example.org:443#qr

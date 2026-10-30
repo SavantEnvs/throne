@@ -1,0 +1,1 @@
+{"outbounds":[{"type":"shadowsocks","tag":"sb-ss","server":"198.51.100.1","server_port":8388,"method":"aes-128-gcm","password":"pw"},{"type":"trojan","tag":"sb-trojan","server":"t.example.com","server_port":443,"password":"pw","tls":{"enabled":true,"server_name":"t.example.com"}},{"type":"direct","tag":"direct"}]}

@@ -1,0 +1,9 @@
+project: savantenvs/throne
+target: fuzz_quirc
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_quirc/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_quirc
+    libfuzzer: true
+    timeout: 5
